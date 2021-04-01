@@ -1,6 +1,6 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(BBPW.png);
+    background: url(https://imgur.com/wIwHuUB.svgz);
     height: 598px;
     width: 806px;
     /*    margin-left: -403px;
@@ -89,13 +89,13 @@
 }
 
 .ds4 .meta.pressed {
-    background: url(meta.svgz) no-repeat center;
+    background: url(/meta.svgz) no-repeat center;
 }
 
 /*Not needed, but I like keeping them here for posterity*/
 /*.ds4 .quadrant{
 position: absolute;
-background: url(player-n.svgz);
+background: url(ps4-assets/player-n.svgz);
 height: 17px;
 width: 111px;
 top: 140px;

@@ -1,0 +1,209 @@
+/*
+  Bonzai PS4 - GPV Edit CSS
+  Built for the standard GamePad Viewer "PlayStation 4" skin.
+
+  Upload BOTH files to the same GitHub Pages folder:
+    Bonzai_GPV_Custom.css
+    Bonzai_PS4.png
+
+  Then put the GitHub Pages CSS URL into GPV's "Edit CSS URL" field.
+*/
+
+.controller.edit {
+  width: 541px !important;
+  height: 327px !important;
+  margin-left: -270.5px !important;
+  margin-top: -163.5px !important;
+
+  background-image: url("Bonzai_PS4.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0 0 !important;
+  background-size: 541px 327px !important;
+}
+
+/* Keep GPV's interactive layers aligned to the artwork. */
+.edit .triggers {
+  position: absolute !important;
+  width: 541px !important;
+  height: 65px !important;
+  left: 0 !important;
+  top: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Shoulder controls are intentionally invisible at rest. */
+.edit .trigger,
+.edit .bumper {
+  opacity: 0 !important;
+}
+
+/* Touchpad / Share / Options: the supplied artwork already contains these. */
+.edit .touchpad,
+.edit .back,
+.edit .start {
+  opacity: 0 !important;
+}
+
+/* ---------------- D-PAD ---------------- */
+
+.edit .dpad {
+  position: absolute !important;
+  width: 128px !important;
+  height: 124px !important;
+  left: 42px !important;
+  top: 24px !important;
+  z-index: 5 !important;
+}
+
+.edit .face {
+  opacity: 0 !important;
+  filter: brightness(1.8) sepia(1) saturate(3) hue-rotate(345deg) !important;
+}
+
+.edit .face.pressed {
+  opacity: 1 !important;
+}
+
+.edit .face.up,
+.edit .face.down {
+  width: 36px !important;
+  height: 52px !important;
+}
+
+.edit .face.left,
+.edit .face.right {
+  width: 52px !important;
+  height: 36px !important;
+}
+
+.edit .face.up {
+  left: 46px !important;
+  top: 0 !important;
+}
+
+.edit .face.down {
+  left: 46px !important;
+  bottom: 0 !important;
+}
+
+.edit .face.left {
+  left: 0 !important;
+  top: 44px !important;
+}
+
+.edit .face.right {
+  right: 0 !important;
+  top: 44px !important;
+}
+
+/* ---------------- FACE BUTTONS ---------------- */
+
+.edit .abxy {
+  position: absolute !important;
+  width: 138px !important;
+  height: 126px !important;
+  left: 363px !important;
+  top: 24px !important;
+  z-index: 5 !important;
+}
+
+.edit .button {
+  position: absolute !important;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: #d7c59b !important;
+  text-align: center !important;
+  line-height: 42px !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  opacity: 0 !important;
+  margin: 0 !important;
+}
+
+.edit .button::after {
+  display: block !important;
+}
+
+.edit .button.pressed {
+  opacity: 1 !important;
+  background: rgba(218, 184, 104, 0.30) !important;
+  box-shadow: inset 0 0 0 2px rgba(235, 211, 153, 0.75),
+              0 0 10px rgba(235, 211, 153, 0.45) !important;
+}
+
+.edit .a {
+  right: 0 !important;
+  top: 42px !important;
+}
+.edit .a::after { content: "×"; }
+
+.edit .b {
+  left: 48px !important;
+  bottom: 0 !important;
+}
+.edit .b::after { content: "○"; }
+
+.edit .x {
+  left: 0 !important;
+  top: 42px !important;
+}
+.edit .x::after { content: "□"; }
+
+.edit .y {
+  left: 48px !important;
+  top: 0 !important;
+}
+.edit .y::after { content: "△"; }
+
+/* ---------------- ANALOG STICKS ---------------- */
+
+.edit .sticks {
+  position: absolute !important;
+  width: 238px !important;
+  height: 70px !important;
+  left: 151px !important;
+  top: 125px !important;
+  z-index: 6 !important;
+}
+
+.edit .stick {
+  position: absolute !important;
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
+  background: rgba(224, 194, 124, 0.20) !important;
+  border: 2px solid rgba(224, 194, 124, 0.55) !important;
+  box-sizing: border-box !important;
+  opacity: 0 !important;
+  box-shadow: 0 0 10px rgba(224, 194, 124, 0.25) !important;
+}
+
+.edit .stick.pressed {
+  opacity: 1 !important;
+}
+
+.edit .stick.left {
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.edit .stick.right {
+  right: 0 !important;
+  top: 0 !important;
+}
+
+/* ---------------- GENERAL CLEANUP ---------------- */
+
+.edit .wheel,
+.edit .fstick {
+  opacity: 0 !important;
+}
+
+.edit * {
+  box-sizing: border-box;
+}

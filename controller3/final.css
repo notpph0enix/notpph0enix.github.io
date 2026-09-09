@@ -1,7 +1,8 @@
 .controller.ds4 {
-    background: url(bass.png);
-    height: 598px;
-    width: 806px;
-    /*    margin-left: -403px;
-        margin-top: -280px;*/
+    background: url(Bonzai_PS4.png) no-repeat;
+    background-size: 541px 327px;
+    height: 327px;
+    width: 541px;
+    margin-left: -270.5px;
+    margin-top: -163.5px;
 }
